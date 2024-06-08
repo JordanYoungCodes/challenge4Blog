@@ -1,0 +1,18 @@
+header{
+    display:flex;
+    justify-content: space-between;
+    background-color: bisque;
+}
+
+.dark{
+    background-color: black;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border:5px solid yellow;
+}
+.light{
+    background-color: rgb(248, 224, 224);
+    color:rgb(27, 21, 21);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border:5px solid rgb(3, 245, 213);
+}
