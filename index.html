@@ -10,7 +10,7 @@
     <link href="./assets/CSS/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="border">
 
     <header>
         <h1>My first Blog</h1>
@@ -20,10 +20,12 @@
         </nav>
     </header>
 
-    <main class="container m-3 p-5">
+    <main class="container m-3 p-5 ">
         <h2>Create your blog</h2>
-        <div>
-            
+        <div class="form1">
+            <div class="imageIndex bg-gradient">
+                
+            </div>
             <form>
                 <div class="mb-3">
                     <label for="UserName1" class="form-label">User Name</label>
@@ -35,9 +37,9 @@
                 </div>
                 <div class="mb-3">
                     <label for="Notes" class="form-label">Notes</label>
-                    <textarea class="form-control" id="Notes" rows="3"></textarea>
+                    <textarea class="form-control" id="Notes" rows="5"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
             </form>
         </div>
     </main>
