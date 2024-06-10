@@ -16,24 +16,37 @@ dTheme.addEventListener("click", function(event) {
 })
 
 
-// trying to get input from form
-//const submitBtn = document.querySelector("#submitBtn");
-let title1 = document.getElementById(title1).textContent;
-let userName1 = document.querySelector("#UserName1").textContent;
-let blog1 = document.querySelector('#Notes').value;
+const form2 = document.querySelector('#form2')
 
+ 
+ 
+ 
 
-localStorage.setItem("blog", blog1);
-blog1.textContent = blog1;
-localStorage.setItem("title", title1);
+form2.addEventListener("submit", function(event){
+    event.preventDefault();
+    let title = document.querySelector("#title1").value;
+    let userName = document.querySelector("#UserName1").value;
+    let blog = document.querySelector('#Notes').value;
+    const blogPost = {
+     title, userName, blog
+    }
 
-localStorage.setItem("UserName", userName1);
-    userName1.textContent = userName1;
-//  //submitBtn.addEventListener('click',function(event) {
-//     event.preventDefault(); 
+if(title === "" || userName === "" || blog === ""){
+        window.alert("please complete the form");
+        return;
     
+    }
+    const blogPostArray = JSON.parse(localStorage.getItem('blogPost')) || [];
+    blogPostArray.push(blogPost);
+    localStorage.setItem('blogPost', JSON.stringify(blogPostArray));
+  
+    window.location.href = './blog.html'
+})
+
+
+
     
-console.log("title1");
+
     
     
     

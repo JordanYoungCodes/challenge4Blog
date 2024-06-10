@@ -7,7 +7,7 @@ header{
 .dark{
     background-color: black;
     color:white;
-    height: auto;
+    height: 100vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border:5px solid yellow;
     border-bottom:5px solid rgb(0, 0, 0);
@@ -17,8 +17,10 @@ header{
     background-color: rgb(211, 247, 220);
     color:rgb(27, 21, 21);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border:5px solid rgb(245, 180, 3);
+    border:5px solid rgb(135, 236, 110);
+    border-bottom: 0px;
     font-weight: bolder;
+    height: 100vh;
 }
 
 .imageIndex{
@@ -35,7 +37,6 @@ header{
     display:flex;
 }
 
-navWel{
-    text-align: center;
-    margin-left:30px;
+#port {
+    padding-left: 20px;
 }
