@@ -26,4 +26,11 @@ MIT license.
 
 ## Link
 
-link:
+link: https://jordanyoungcodes.github.io/challenge4Blog/
+
+## Screenshots
+
+![alt text](<Screenshot (8).png>)
+![alt text](<Screenshot (9).png>)
+
+# thanks for Visiting!!!!
