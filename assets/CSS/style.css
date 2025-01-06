@@ -1,37 +1,94 @@
+
+:root{
+    --header-bac-color: linear-gradient(to right, #00bcd4, #002f55, #008a9c);
+    --header-text-color: rgb(255, 255, 185);
+    --button-bac-color: rgb(0, 0, 190);
+    --button-text-color: rgb(248, 247, 206);
+    --button-shadow-color: 3px 3px 12px rgb(248, 248, 150);
+    --image-color: linear-gradient(to right, rgb(0, 0, 190), rgb(1, 1, 65));
+    --root-bac-color: rgb(3, 0, 17);
+    --root-text-color: rgb(250, 248, 235);
+    --root-text-shadow: 3px 3px 12px rgb(250, 250, 208);
+    --footer-bac-color: linear-gradient(to right, #011933, #01569c, #fffc5d);
+}
+
+
+body.dark {
+   
+    --header-bac-color: linear-gradient(to right, #00bcd4, #002f55, #008a9c);
+    --header-text-color: rgb(255, 255, 185);
+    --button-bac-color: rgb(0, 0, 190);
+    --button-text-color: rgb(248, 247, 206);
+    --button-shadow-color: 3px 3px 12px rgb(248, 248, 150);
+    --image-color: linear-gradient(to right, rgb(0, 0, 190), rgb(1, 1, 65));
+    --root-bac-color: rgb(3, 0, 17);
+    --root-text-color: rgb(250, 248, 235);
+    --root-text-shadow: 3px 3px 12px rgb(250, 250, 208);
+    --footer-bac-color: linear-gradient(to right, #011933, #01569c, #fffc5d);
+ 
+}
+
+body.light {
+    --header-bac-color: linear-gradient(to right, #92eefa, #89afce, #b4edf5);
+    --header-text-color: rgb(0, 7, 71);
+    --button-bac-color: rgb(250, 173, 111);
+    --button-text-color: rgb(6, 0, 90);
+    --button-shadow-color: 3px 3px 12px rgb(9, 1, 85);
+    --image-color: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 166, 0));
+    --root-bac-color: rgb(123, 170, 182);
+    --root-text-color: rgb(6, 0, 90);
+    --root-text-shadow: 0px 0px 0px rgb(6, 0, 90);
+    --footer-bac-color: linear-gradient(to right, #ff3300, #f7be69, #fffc5d);
+}
+
+
 header{
     display:flex;
     justify-content: space-between;
-    background-color: bisque;
+    align-content: center;
+    color: var(--header-text-color);
+    background: var(--header-bac-color);
+    text-shadow: var(--root-text-shadow);
 }
 
-.dark{
-    background-color: black;
-    color:white;
+body {
+    background: var(--root-bac-color);
+    color:var(--root-text-color);
     height: 100vh;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border:5px solid yellow;
-    border-bottom:5px solid rgb(0, 0, 0);
     font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
-.light{
-    background-color: rgb(211, 247, 220);
-    color:rgb(27, 21, 21);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border:5px solid rgb(135, 236, 110);
-    border-bottom: 0px;
-    font-weight: bolder;
-    height: 100vh;
+
+
+.btn {
+    border: 3px solid var(--button-text-color);
+    box-shadow:var(--button-shadow-color);
+    background: var(--button-bac-color);
+    color: var(--button-text-color);
+}
+
+.firstText {
+    margin-left: 5%;
+    margin-top: 10px;
 }
 
 .imageIndex{
     width: 50%;
-    background-color: rgb(42, 71, 165); 
+    background: var(--image-color); 
     height: auto;
     margin-right: 30px;
+    box-shadow:var(--button-shadow-color);
 }
 .mb-3{
     width: 200%;
 }
+
+.form-control {
+    border: 3px solid var(--button-text-color);;
+    box-shadow:var(--button-shadow-color);
+}
+
 
 .form1{
     display:flex;
@@ -39,4 +96,13 @@ header{
 
 #port {
     padding-left: 20px;
+}
+
+footer {
+    padding-left: 5%;
+    width: 100%;
+    height: 15%;
+    background: var(--footer-bac-color);
+    align-content: center;
+   
 }

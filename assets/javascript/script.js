@@ -1,16 +1,24 @@
-document.body.classList ="dark"
 
-const dTheme = document.getElementById("dTheme");
+const dTheme = document.getElementById('dTheme');
+
+
+
+document.body.classList.add("dark");
+dTheme.setAttribute("data-theme", "dark");
+
+
 dTheme.addEventListener("click", function(event) {
-    let currenttheme = event.target.getAttribute("data-theme")
+    let currenttheme = document.body.classList.contains("dark") ? "dark" : "light";
     if(currenttheme === "dark"){
 
-        document.body.classList ="light"
-        event.target.setAttribute("data-theme","light")
+        document.body.classList.remove("dark");
+        document.body.classList.add("light");
+        event.target.setAttribute("data-theme", "light");
     }else{
-        document.body.classList ="dark"
-        event.target.setAttribute("data-theme","dark")
-            return;
+        document.body.classList.remove("light");
+        document.body.classList.add("dark");
+        event.target.setAttribute("data-theme", "dark");
+        
     }
 
 })
@@ -49,5 +57,3 @@ if(title === "" || userName === "" || blog === ""){
 
     
     
-    
-//     
